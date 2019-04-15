@@ -1,6 +1,6 @@
 .App {
-  text-align: center;
     font-family: 'Merienda', cursive;
+    text-align: center;
 }
 
 .logo{
@@ -30,9 +30,11 @@
     width: 40%;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 100px;
     padding: 40px;
 }
 .log{
+     margin: auto;
     width: 80px;
     height: 40px;
     border-radius: 10%;
@@ -44,7 +46,6 @@
     font-size: 20px;
 }
 .foot{
-    text-align: left;
     color: blue;
     cursor: pointer;
 }
@@ -133,4 +134,29 @@ form input {
 .sucessMsg {
   color: #6B8E23;
   margin-bottom: 10px;
+}
+.card2{
+    margin: 120px;
+    margin-top: 30px;
+    overflow: hidden; 
+}
+.timeline-page{
+    margin: 50px;
+    margin-left: 100px;
+    text-align: left;
+}
+.time{
+    width:40%;
+    height:40%;
+}
+.like{
+    font-family: 'Merienda', cursive;
+    margin: 1%;
+    text-align: left;
+}
+.comment-form {
+  width: 500px;
+}
+.comment-form .input-group {
+  margin: 10px 0; 
 }

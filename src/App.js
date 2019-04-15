@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import Register from './Components/Register';
@@ -19,6 +20,7 @@ class App extends Component {
                     <Route path='/Register' component={Register} />
                     <Route path='/timeline' component={Timeline} />
                 </Switch>
+                <Footer />
             </div>
         </BrowserRouter>
     );
