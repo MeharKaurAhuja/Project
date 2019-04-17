@@ -6,6 +6,13 @@ import Home from './Components/Home';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Timeline from './Components/timeline';
+import Details from './Components/Details';
+import Art from './Components/Art';
+import Painting from './Components/Painting';
+import Photography from './Components/Photography';
+import Poems from './Components/Poems';
+import Dance from './Components/Dance';
+import Singing from './Components/Singing';
 import './App.css';
 
 class App extends Component {
@@ -19,6 +26,13 @@ class App extends Component {
                     <Route path='/Login' component={Login} />
                     <Route path='/Register' component={Register} />
                     <Route path='/timeline' component={Timeline} />
+                    <Route path='/Details' component={Details} />
+                    <Route path='/Art' component={Art} />
+                    <Route path='/Painting' component={Painting} />
+                    <Route path='/Photography' component={Photography} />
+                    <Route path='/Poems' component={Poems} />
+                    <Route path='/Dance' component={Dance} />
+                    <Route path='/Singing' component={Singing} />
                 </Switch>
                 <Footer />
             </div>

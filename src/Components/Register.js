@@ -34,9 +34,10 @@ class Register extends React.Component {
           fields["mobileno"] = "";
           fields["password"] = "";
           this.setState({fields:fields});
-          alert("Form submitted");
+          alert("Welcome to Websell");
+          this.props.history.push("/timeline");
       }
-        this.props.history.push("/timeline");
+        
 
     }
 
@@ -137,27 +138,3 @@ class Register extends React.Component {
 
 
 export default Register;
-//class Register extends Component {
-//    render(){
-//        return(
-//            <div className='login card'>
-//                
-//                    <form>
-//                        <span className="label"> Enter your Username: </span>
-//                        <input type='text' id='uname'/> <br />
-//                        <span className="label"> Enter your E-mail: </span>
-//                        <input type='email' id='email'/> <br />
-//                        <span className="label"> Set your Password: </span>
-//                        <input type="password" id='pswd'/> <br />
-//                        <span className="label"> Confirm your Password: </span>
-//                        <input type="password" id='pswd'/> <br /><br />
-//                        <button className="reg"> Register </button> <br /> <br />
-//                        <Link to='/Login'><span className="foot"> Already have an account? Login here </span></Link>
-//                    </form>
-//             
-//            </div>
-//        );
-//    }
-//}
-//
-//export default Register;

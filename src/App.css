@@ -166,7 +166,7 @@ form input {
 }
 .im{
     margin-left: 180px;
-    padding: 0 20px;
+    padding: 0 35px 15px;
 }
 .im1{
     padding-top: 15px;
@@ -176,7 +176,7 @@ form input {
     color: crimson;
 }
 
-.AddComment{
+.AddComment1{
     width: 50%;
 }
 .btn{
@@ -192,4 +192,73 @@ form input {
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+.detail1 img{
+    width: 850px;
+    height: 500px;
+    float: left;
+    margin: 2%;
+}
+.detail2{
+   margin-top: 5%;
+}
+.card4{
+    
+    overflow: hidden;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpY4zNK4DniFBNbbFXkHetT2ZUhJohni8DWVZmnULTjfIC7Jakig');
+    background-size: cover;
+}
+.fileInput{
+  border:none;
+  padding: 10px;
+  margin: 15px;
+  cursor: pointer;
+}
+.comm{
+    width: 80%;
+    text-align: left;
+    margin-left: 50px;
+}
+.comm1{
+    width: 80%;
+    text-align: left;
+    margin-left: 220px;
+}
+.detail3 img{
+    width: 720px;
+    height: 420px;
+    float: left;
+    margin: 12%;
+}
+.detail4{
+   margin: 12%;
+    text-align: justify;
+    color: indianred;
+    font-weight: bold;
+}
+.image1{
+    width: 400px;
+    height: 250px;
+    margin: 35px 0 0 0;
+}
+.im2{
+    margin-left: 180px;
+    padding: 0 35px 15px;
+}
+.like1{
+    font-family: 'Merienda', cursive;
+    margin: 2%;
+    margin-left: 180px;
+}
+.text3{
+    color: crimson;
+    font-weight: bold;
+    font-size: 18px;
+}
+.heading{
+    font-weight: bold;
+    text-align: left;
+    margin-top: 85px;
+    margin-left: 150px;
 }
