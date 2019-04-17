@@ -4,7 +4,7 @@ import '../App.css';
 
 const Navbar = (props) => {
     return(
-        <nav className='nav-wrapper grey darken-4'>
+        <nav className='nav-wrapper grey darken-4 st'>
             <Link to='/' className='left logo'> WebSell </Link>
             <ul className='right list'>
                 <li><Link to='/'>Home</Link></li>

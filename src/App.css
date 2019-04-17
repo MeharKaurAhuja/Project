@@ -1,6 +1,6 @@
 .App {
+  text-align: center;
     font-family: 'Merienda', cursive;
-    text-align: center;
 }
 
 .logo{
@@ -46,6 +46,7 @@
     font-size: 20px;
 }
 .foot{
+    text-align: left;
     color: blue;
     cursor: pointer;
 }
@@ -136,7 +137,6 @@ form input {
   margin-bottom: 10px;
 }
 .card2{
-    margin: 120px;
     margin-top: 30px;
     overflow: hidden; 
 }
@@ -145,18 +145,51 @@ form input {
     margin-left: 100px;
     text-align: left;
 }
-.time{
-    width:40%;
-    height:40%;
-}
 .like{
     font-family: 'Merienda', cursive;
     margin: 1%;
     text-align: left;
 }
-.comment-form {
-  width: 500px;
+
+
+.image{
+    width: 350px;
+    height: 250px;
+    margin: 35px 0 0 0;
 }
-.comment-form .input-group {
-  margin: 10px 0; 
+.card3{
+    margin: 100px;
+    margin-top: 40px;
+    overflow: hidden;
+    background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/21/71/295830892804e4c.jpg');
+    background-size: cover;
+}
+.im{
+    margin-left: 180px;
+    padding: 0 20px;
+}
+.im1{
+    padding-top: 15px;
+    margin-left: 180px;
+    font-size: 25px;
+    font-weight: bold;
+    color: crimson;
+}
+
+.AddComment{
+    width: 50%;
+}
+.btn{
+    width: 20%;
+}
+.time{
+    width:60%;
+    height:60%;
+}
+
+.st{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }

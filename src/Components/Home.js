@@ -32,8 +32,40 @@ class Home extends Component {
                     </p>
                 </div>
                 <div className='sub1'> Categories </div>
-                <div className='card card1'>
+                <div className='card card3'>
+                <div className='row'>
+                    <div className='col s3'>
+                        <h4 className='im1'>Art and Craft</h4>
+                        <img className='image im' src='http://www.indialine.com/travel/images/wooden-handicrafts.jpg' onMouseOver={e => (e.currentTarget.src = "https://stylenrich.com/wp-content/uploads/2016/08/duct-tape-diy-cycle-basket-crafts-stylenrich.jpg")} onMouseOut={e => (e.currentTarget.src = "http://www.indialine.com/travel/images/wooden-handicrafts.jpg")} alt='art and craft' />
                     
+                    </div>
+                    <div className='col s3'>
+                        <h4 className='im1'>Painting</h4>
+                        <img className='image im' src='http://www.indialine.com/travel/images/madhubani-painting.jpg'
+                        onMouseOver={e => (e.currentTarget.src = "https://315gqf1cb88e2qagu3f9xz91-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/Harriet-Faith-FTR-Buck-350x250.jpg")} onMouseOut={e => (e.currentTarget.src = "http://www.indialine.com/travel/images/madhubani-painting.jpg")} alt='painting' />
+                   
+                   </div>
+                    <div className='col s3'>
+                        <h4 className='im1'>Photography</h4>
+                        <img className='image im' src='https://cdn.firespring.com/images/781e971c-5e98-4f55-ae79-5f9a06176ac5.jpg' onMouseOver={e => (e.currentTarget.src = 'https://i.pinimg.com/originals/7f/33/eb/7f33ebf08f27713b51c51659a79da2dc.jpg')} onMouseOut={e => (e.currentTarget.src = "https://cdn.firespring.com/images/781e971c-5e98-4f55-ae79-5f9a06176ac5.jpg")} alt='painting' />
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col s3'>
+                        <h4 className='im1'>Poems</h4>
+                        <img className='image im' src='https://i2.wp.com/www.multiculturallywed.com/wp-content/uploads/2015/08/Rumi-2667-Wedding-Vows-Persian-Wedding-Reading.jpg?fit=350%2C250' onMouseOver={e => (e.currentTarget.src = "https://bdayhindi.com/wp-content/uploads/Best-Happy-Birthday-Wishes-for-Lover-350x250.jpg")} onMouseOut={e => (e.currentTarget.src = "https://i2.wp.com/www.multiculturallywed.com/wp-content/uploads/2015/08/Rumi-2667-Wedding-Vows-Persian-Wedding-Reading.jpg?fit=350%2C250")} alt='painting' />
+                    
+                    </div>
+                    <div className='col s3'>
+                        <h4 className='im1'>Dance Videos</h4>
+                        <img className='image im' src='https://orig00.deviantart.net/1631/f/2012/166/e/b/dance_animation_2_by_gray_gryphon-d53lxgr.gif' onMouseOver={e => (e.currentTarget.src = "https://gifimage.net/wp-content/uploads/2017/11/fusion-gif-1.gif")} onMouseOut={e => (e.currentTarget.src = "https://orig00.deviantart.net/1631/f/2012/166/e/b/dance_animation_2_by_gray_gryphon-d53lxgr.gif")} alt='painting' />
+                   
+                   </div>
+                    <div className='col s3'>
+                        <h4 className='im1'>Art and Craft</h4>
+                        <img className='image im' src='https://www.artistsandillustrators.co.uk/uploads/tinymce/images/venice_light_base_colours.jpg' onMouseOver={e => (e.currentTarget.src = "http://www.indialine.com/travel/images/madhubani-painting.jpg")} onMouseOut={e => (e.currentTarget.src = "http://www.indialine.com/travel/images/wooden-handicrafts.jpg")} alt='painting' />
+                    </div>
+                </div>
                 </div>
             </div>
         );
