@@ -136,7 +136,7 @@ class Poems extends React.Component {
             <br />
             <div className='row'>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://photos.smugmug.com/Landscapes-and-Panoramas/i-4GT6BPN/3/0a870bad/S/_DSC0900-S.jpg' alt='pic1' />
+                        <img className='image1 im2' src='https://thedashpoem.com/wp-content/uploads/Spring-BlogPreview-1.jpg' alt='pic1' />
                         <input type="button" value={this.state.img1[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img1)} />
                         <span className='like'> {this.state.img1[1]} </span>
 
@@ -159,7 +159,7 @@ class Poems extends React.Component {
                     
                     </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://www.siobhanphotography.com/wp-content/uploads/holiday-photo-session-special-siobhan-gazur-photography-san-diego-400x250.jpg' alt='pic1' />
+                        <img className='image1 im2' src='http://www.brainmillpress.com/staging/wp-content/uploads/2016/04/Second-Week-poetry-month-winners.png' alt='pic1' />
                         <input type="button" value={this.state.img2[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img2)} />
                         <span className='like'> {this.state.img2[1]} </span>
 
@@ -181,7 +181,7 @@ class Poems extends React.Component {
                         </div>
                    </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='http://cooldigitalphotography.com/wp-content/uploads/2015/06/foliage-covered-steps-22624-400x250.jpg' alt='pic1' />
+                        <img className='image1 im2' src='https://i1.wp.com/www.writingredux.com/wp-content/uploads/sites/2/2017/03/Q481-Bloom-min.png?resize=400%2C250&ssl=1' alt='pic1' />
                         <input type="button" value={this.state.img3[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img3)} />
                         <span className='like'> {this.state.img3[1]} </span>
 
@@ -205,7 +205,7 @@ class Poems extends React.Component {
                 </div>
                 <div className='row'>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://gillmaheu.com/wp/wp-content/uploads/2018/10/magnifique-seance-famille-lifestyle-album-lausanne-2018-gill-maheu-photography__0020-400x250.jpg' alt='pic1' />
+                        <img className='image1 im2' src='https://www.thebabywebsite.com/media/5018/childrens-poem.jpg?width=400&height=250&mode=crop&quality=70' alt='pic1' />
                         <input type="button" value={this.state.img4[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img4)} />
                         <span className='like'> {this.state.img4[1]} </span>
 
@@ -227,7 +227,7 @@ class Poems extends React.Component {
                         </div>
                     </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='http://www.nikkahler.com.au/wp-content/uploads/2018/06/170424_MtWilsonRoad03_PN-400x250.jpg' alt='pic1' />
+                        <img className='image1 im2' src='http://3.bp.blogspot.com/-1bNSp4Gf_qQ/UiZc17MSn8I/AAAAAAAAAlY/Z4alhlEAfjI/s400/dj+%2830%29.jpg' alt='pic1' />
                         <input type="button" value={this.state.img5[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img5)} />
                         <span className='like'> {this.state.img5[1]} </span>
 
@@ -249,7 +249,7 @@ class Poems extends React.Component {
                         </div>
                    </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://sharonwallisphotography.com/wp-content/uploads/2017/04/sharon-wallis-photography-cheshire-daddy-1-400x250.jpg' alt='pic1' />
+                        <img className='image1 im2' src='https://qph.fs.quoracdn.net/main-qimg-5551109e5842a00764ff47203db632bf.webp' alt='pic1' />
                         <input type="button" value={this.state.img6[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img6)} />
                         <span className='like'> {this.state.img6[1]} </span>
 
