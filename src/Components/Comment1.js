@@ -9,7 +9,7 @@ const Comment1 = (props) => {
       return (
         <div>
             <div className='a1' key={comment.id}>
-              <div> <b>Comment:</b> { comment.text } </div><br />
+              <div> <b>Comment:</b> { comment.text } </div>
             </div>
         </div>
       )

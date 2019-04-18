@@ -13,7 +13,7 @@
 }
 .home{
     background-image: url("https://i.imgur.com/fuQPtmK.jpg");
-    height: 600px;
+    height: 700px;
     background-size: cover;
     margin: 0;
     padding: 0;
@@ -25,6 +25,7 @@
 }
 .sub{
     font-family: 'Merienda', cursive;
+    margin-left: 120px;
 }
 .login{
     width: 40%;
@@ -66,6 +67,7 @@
     font-family: 'Merienda', cursive;
     margin-top: 50px;
     font-size: 40px;
+    padding-top: 50px;
     margin-left: 40px;
 }
 .img1{
@@ -261,4 +263,26 @@ form input {
     text-align: left;
     margin-top: 85px;
     margin-left: 150px;
+}
+.s{
+    
+    background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/21/71/295830892804e4c.jpg');
+    background-size: cover;
+}
+.sub2{
+    font-family: 'Merienda', cursive;
+    margin-top: 50px;
+    font-size: 40px;
+    color: crimson;
+    font-weight: bold;
+    padding-top: 50px;
+}
+.st2{
+    margin-left: 480px;
+    font-weight: bold;
+    
+}
+.bt{
+    border-radius: 5px;
+    color: red;
 }

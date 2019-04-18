@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import Comment1 from './Comment1';
 import AddComment1 from './AddComment1';
+import Navbar2 from './Navbar2';
 import '../App.css';
 
 class Singing extends React.Component {
@@ -114,6 +115,8 @@ class Singing extends React.Component {
       }
     render() {
         return (
+            <div>
+            <Navbar2 />
             <div className="card4">
             <h1 className='heading'>Singing</h1>
             <div className='row'>
@@ -140,16 +143,18 @@ class Singing extends React.Component {
                         <input type="button" value="Show Comments" className='like1' onClick={this.handleComm}/>
 
 
-                        <br /><br /><br />
+                        <br /><br />
 
-                            <div className='comm1'>
-                            <AddComment1 addComment={this.addComment} /><br /><br />
+                        <div className='comm1'>
                             {this.state.showComm ? (
                             <div>
-                                <Comment1 comments = {this.state.comments}/><br />
+                                <Comment1 comments = {this.state.comments}/>
 
                             </div>) :
-                        (null)}
+                            (null)}
+                                <br />
+                            <AddComment1 addComment={this.addComment} /><br />
+                            
                         </div>
                     
                     </div>
@@ -161,16 +166,18 @@ class Singing extends React.Component {
                         <input type="button" value="Show Comments" className='like1' onClick={this.handleComm}/>
 
 
-                        <br /><br /><br />
+                        <br /><br />
 
-                            <div className='comm1'>
-                            <AddComment1 addComment={this.addComment} /><br /><br />
+                        <div className='comm1'>
                             {this.state.showComm ? (
                             <div>
-                                <Comment1 comments = {this.state.comments}/><br />
+                                <Comment1 comments = {this.state.comments}/>
 
                             </div>) :
-                        (null)}
+                            (null)}
+                                <br />
+                            <AddComment1 addComment={this.addComment} /><br />
+                            
                         </div>
                    </div>
                     <div className='col s3'>
@@ -181,16 +188,18 @@ class Singing extends React.Component {
                         <input type="button" value="Show Comments" className='like1' onClick={this.handleComm}/>
 
 
-                        <br /><br /><br />
+                        <br /><br />
 
-                            <div className='comm1'>
-                            <AddComment1 addComment={this.addComment} /><br /><br />
+                        <div className='comm1'>
                             {this.state.showComm ? (
                             <div>
-                                <Comment1 comments = {this.state.comments}/><br />
+                                <Comment1 comments = {this.state.comments}/>
 
                             </div>) :
-                        (null)}
+                            (null)}
+                                <br />
+                            <AddComment1 addComment={this.addComment} /><br />
+                            
                         </div>
                     </div>
                 </div>
@@ -203,16 +212,18 @@ class Singing extends React.Component {
                         <input type="button" value="Show Comments" className='like1' onClick={this.handleComm}/>
 
 
-                        <br /><br /><br />
+                        <br /><br />
 
-                            <div className='comm1'>
-                            <AddComment1 addComment={this.addComment} /><br /><br />
+                        <div className='comm1'>
                             {this.state.showComm ? (
                             <div>
-                                <Comment1 comments = {this.state.comments}/><br />
+                                <Comment1 comments = {this.state.comments}/>
 
                             </div>) :
-                        (null)}
+                            (null)}
+                                <br />
+                            <AddComment1 addComment={this.addComment} /><br />
+                            
                         </div>
                     </div>
                     <div className='col s3'>
@@ -223,16 +234,18 @@ class Singing extends React.Component {
                         <input type="button" value="Show Comments" className='like1' onClick={this.handleComm}/>
 
 
-                        <br /><br /><br />
+                       <br /><br />
 
-                            <div className='comm1'>
-                            <AddComment1 addComment={this.addComment} /><br /><br />
+                        <div className='comm1'>
                             {this.state.showComm ? (
                             <div>
-                                <Comment1 comments = {this.state.comments}/><br />
+                                <Comment1 comments = {this.state.comments}/>
 
                             </div>) :
-                        (null)}
+                            (null)}
+                                <br />
+                            <AddComment1 addComment={this.addComment} /><br />
+                            
                         </div>
                    </div>
                     <div className='col s3'>
@@ -243,19 +256,22 @@ class Singing extends React.Component {
                         <input type="button" value="Show Comments" className='like1' onClick={this.handleComm}/>
 
 
-                        <br /><br /><br />
+                        <br /><br />
 
-                            <div className='comm1'>
-                            <AddComment1 addComment={this.addComment} /><br /><br />
+                        <div className='comm1'>
                             {this.state.showComm ? (
                             <div>
-                                <Comment1 comments = {this.state.comments}/><br />
+                                <Comment1 comments = {this.state.comments}/>
 
                             </div>) :
-                        (null)}
+                            (null)}
+                                <br />
+                            <AddComment1 addComment={this.addComment} /><br />
+                            
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         )
     }

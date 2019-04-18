@@ -11,7 +11,7 @@ class Home extends Component {
                 <div className='home'>
                     <br /><br />
                     <span className='heading'>Welcome to WebSell!</span>
-                    <h4 className='sub'>Connect, Share and Earn. </h4>
+                    <h4 className='sub'>Connect, Share and Learn. </h4>
                 </div>
                 <div className='sub1'> Share your talents </div>
                 <div className='card card1'>
@@ -31,7 +31,8 @@ class Home extends Component {
                     <p className='text'> Lorem ipsum dolor sit amet, ad his alii mandamus, at qui amet suscipit dissentiet. Errem ceteros luptatum at vim, aeque perfecto pro an. Pro eu veniam iriure, ea iriure adipiscing efficiantur duo. Putant sadipscing eum ei, noster tamquam mnesarchum ut duo. Fugit graece laoreet nam ne, causae consectetuer in eos. Vix brute veniam equidem an, et vis velit quaeque, postulant adolescens et has.
                     </p>
                 </div>
-                <div className='sub1'> Categories </div>
+                <div className='s'>
+                <div className='sub2'> Categories </div>
                 <div className='card card3'>
                 <div className='row'>
                     <div className='col s3'>
@@ -65,6 +66,7 @@ class Home extends Component {
                         <h4 className='im1'>Singing</h4>
                         <Link to='/Singing'><img className='image im' src='https://i.makeagif.com/media/3-24-2017/WXnA5S.gif' onMouseOver={e => (e.currentTarget.src = "https://i.imgur.com/Tdtz3VK.gif")} onMouseOut={e => (e.currentTarget.src = "https://i.makeagif.com/media/3-24-2017/WXnA5S.gif")} alt='singing' /></Link>
                     </div>
+                </div>
                 </div>
                 </div>
             </div>

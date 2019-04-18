@@ -8,24 +8,28 @@ const Footer = (props) => {
              <div className="container">
                 <div className="row">
                     <div className="col l6 s12">
-                        <h5 className="white-text">Footer Content</h5>
-                        <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                        <div className='left'>
+                        <h4 className="white-text ">WebSell</h4>
+                        <h5 className="grey-text text-lighten-4">Connect, Share and Learn.</h5><br />
+                        </div>
                     </div>
-                    <div className="col l4 offset-l2 s12">
-                        <h5 className="white-text">Links</h5>
+                    <div className="col l3 offset-l3 s12">
+                        <h5 className="white-text left">Categories</h5>
                         <ul>
-                            <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                            <li><a className="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                            <li><a className="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                            <li><a className="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                            <br /><br />
+                            <Link to='/Art'><li className="grey-text text-lighten-3 left">Art and Craft</li></Link><br />
+                            <Link to='/Painting'><li className="grey-text text-lighten-3 left">Painting</li></Link><br />
+                            <Link to='/Photography'><li className="grey-text text-lighten-3 left">Photography</li></Link><br />
+                            <Link to='/Poems'><li className="grey-text text-lighten-3 left">Poems</li></Link><br />
+                            <Link to='/Dance'><li className="grey-text text-lighten-3 left">Dance</li></Link><br />
+                            <Link to='/Singing'><li className="grey-text text-lighten-3 left">Singing</li></Link><br />
                         </ul>
                     </div>
                 </div>
             </div>
             <div className="footer-copyright">
                 <div className="container">
-                    © 2014 Copyright Text
-                    <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+                    © 2019 Copyright Text
                 </div>
             </div>
         </footer>

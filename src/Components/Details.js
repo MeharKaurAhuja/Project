@@ -79,7 +79,7 @@ class Details extends React.Component {
       }
     render() {
         return (
-            <div className="card card4">
+            <div className="card4">
             <h2>hey there</h2>
             <div className='row'>
                 <div className='col m7'>
@@ -97,16 +97,18 @@ class Details extends React.Component {
                     <input type="button" value="Show Comments" className='like' onClick={this.handleComm}/>
 
                     
-                    <br /><br /><br />
-                    
+                    <br /><br />
+
                         <div className='comm'>
-                        <AddComment addComment={this.addComment} /><br /><br />
-                        {this.state.showComm ? (
-                        <div>
-                            <Comment comments = {this.state.comments}/><br />
-                        
-                        </div>) :
-                    (null)}
+                            {this.state.showComm ? (
+                            <div>
+                                <Comment comments = {this.state.comments}/>
+
+                            </div>) :
+                            (null)}
+                                <br />
+                            <AddComment addComment={this.addComment} /><br />
+                            
                         </div>
                 </div>
             </div>
