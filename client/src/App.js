@@ -18,6 +18,11 @@ import Dance from './Components/Dance';
 import Singing from './Components/Singing';
 import './App.css';
 
+// main component uses react-router-dom that lets the app to render components as soon as there is a request for new page
+// BrowserRouter wraps all the Route components
+// Route is used to specify the path on which a certain component has to be rendered. Thus we can give different paths to different pages.
+// 'exact' attribute is used here as without this, path="/" would also match "/about", since / is contained in the route.
+
 class App extends Component {
   render() {
     return (

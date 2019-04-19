@@ -1,7 +1,13 @@
+
+mehak puri
+11:50 PM (8 minutes ago)
+to me
+
 const express = require("express");
 const router = express.Router();
 const User = require("../models/data");
 
+// we are using nodemailer package here for email verification
 var smtpTransport = nodemailer.createTransport({
     service: "Gmail",
     auth: {
@@ -11,6 +17,8 @@ var smtpTransport = nodemailer.createTransport({
 });
 var rand,mailOptions,host,link;
 
+// this is our get method
+// this method fetches all available data in our database
 router.get("/getData", (req, res) => {
   Data.find((err, data) => {
     if (err) return res.json({ success: false, error: err });
@@ -22,6 +30,8 @@ router.get("/", (req, res) => {
     res.sendFile(__dirname + "/login.js");
 });
 
+// this is our create method
+// this method adds new data in our database
 router.post("/addname", (req, res) => {
     var myData = new User(req.body);
     myData.save()
@@ -33,8 +43,9 @@ router.post("/addname", (req, res) => {
         });
 });
 
+// this function specifies the email to be sent for verification and also checks if an error occurs
 router.get('/send',function(req,res){
-        rand=Math.floor((Math.random() * 100) + 54);
+    rand=Math.floor((Math.random() * 100) + 54);
 	host=req.get('host');
 	link="http://"+req.get('host')+"/verify?id="+rand;
 	mailOptions={
@@ -54,6 +65,7 @@ router.get('/send',function(req,res){
 });
 });
 
+// this method checks id the email is verified successfully or not and also checks for authentication  of source
 router.get('/verify',function(req,res){
 console.log(req.protocol+":/"+req.get('host'));
 if((req.protocol+"://"+req.get('host'))==("http://"+host))

@@ -8,6 +8,8 @@ import '../App.css';
 
 
 class Timeline extends Component {   
+    
+    // initializing the state
     state = {
         img1: [1,219,'LIKE'],
         img2: [2,167,'LIKE'],
@@ -25,11 +27,16 @@ class Timeline extends Component {
         showComm2: [false,2],
         showComm3: [false,3]
     }
+
+    // we have used it so that when we open our page it opens from the top
     componentDidMount() {
         window.scrollTo(0, 0)
     }
+
+    // function to display comments on the image
     handleComm = (e,param) => {
-        console.log('Clicked', e);
+        
+        // checks the state and then updates it accordingly
         if(e[0]===true){
             if(e[1]===1){
                 this.setState({
@@ -65,6 +72,8 @@ class Timeline extends Component {
             }
         }
     }
+    
+    //function to open detail pages of different images
     handleDetail1 = () => {
          this.props.history.push("/Details1");
     }
@@ -74,10 +83,11 @@ class Timeline extends Component {
     handleDetail3 = () => {
          this.props.history.push("/Details3");
     }
+    
+    // function to like or unlike by clicking on the button
     handleClick = (e,param) => {
-       //console.log('Clicked', e[0]);
-       
         
+        // to increase likes
         if(e[2]==='LIKE'){
             const inc = e[1]+1;
             
@@ -99,6 +109,8 @@ class Timeline extends Component {
         }
         
         else{
+            
+            // to unlike
             const dec = e[1]-1;
             if(e[0]===1){
                 this.setState({
@@ -117,8 +129,10 @@ class Timeline extends Component {
             }
         }
     
-        }
-      addComment1 = (comment) => {
+    }
+     
+    // functions to add comments with certain ids
+    addComment1 = (comment) => {
         console.log('Inside App Component', comment);
         comment.id = Math.floor(Math.random() * 10);
         console.log(comment.id);
@@ -126,8 +140,8 @@ class Timeline extends Component {
         this.setState({
           comments1
         })
-      }
-      addComment2 = (comment) => {
+    }
+    addComment2 = (comment) => {
         console.log('Inside App Component', comment);
         comment.id = Math.floor(Math.random() * 10);
         console.log(comment.id);
@@ -135,8 +149,8 @@ class Timeline extends Component {
         this.setState({
           comments2
         })
-      }
-      addComment3 = (comment) => {
+    }
+    addComment3 = (comment) => {
         console.log('Inside App Component', comment);
         comment.id = Math.floor(Math.random() * 10);
         console.log(comment.id);
@@ -144,7 +158,11 @@ class Timeline extends Component {
         this.setState({
           comments3
         })
-      }
+    }
+    
+     
+    // this is our UI
+    // it displays the timeline page as shown on the screen with all the functionality
        
     render() {
         return (
@@ -155,7 +173,7 @@ class Timeline extends Component {
                 <div className="timeline-page">
                      <Upload />
                     <br />
-                    <Link to='/Details1'><img className="time" src="https://i.imgur.com/5G0SJtn.jpg" alt="oops! not available" /></Link>
+                    <Link to='/Details1'><img className="time" src="http://webneel.com/daily/sites/default/files/images/daily/10-2013/15-tree-painting.jpg" alt="oops! not available" /></Link>
                     <br />
                     <br />
                 
@@ -177,7 +195,7 @@ class Timeline extends Component {
                 
                     <br />
                     <br />
-                    <Link to='/Details2'><img className="time" src="https://i.imgur.com/5G0SJtn.jpg" alt="oops! not available" /></Link>
+                    <Link to='/Details2'><img className="time" src="https://ae01.alicdn.com/kf/HTB19SlNMFXXXXctXpXXq6xXFXXXA/Hot-Sale-High-Quality-Canvas-Oil-Painting-Nice-Landscape-Paintings-For-Living-Room-Wall-Decoration.jpg" alt="oops! not available" /></Link>
                     <br />
                     <br />
                 
@@ -197,7 +215,7 @@ class Timeline extends Component {
                     </div>
                     <br />
                     <br />
-                    <Link to='/Details3'><img className="time" src="https://i.imgur.com/5G0SJtn.jpg" alt="oops! not available" /></Link>
+                    <Link to='/Details3'><img className="time" src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Altja_j%C3%B5gi_Lahemaal.jpg" alt="oops! not available" /></Link>
                     <br />
                     <br />
                 

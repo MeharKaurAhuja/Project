@@ -4,6 +4,8 @@ import '../App.css';
 
 
 class Register extends React.Component {
+    
+    // constructor to initialise all state values
     constructor() {
       super();
       this.state = {
@@ -15,10 +17,13 @@ class Register extends React.Component {
       this.submituserRegistrationForm = this.submituserRegistrationForm.bind(this);
 
     };
+    
+    // we have used it so that when we open our page it opens from the top
     componentDidMount() {
         window.scrollTo(0, 0)
     }
-
+    
+    // function to handle the change in values written in the 
     handleChange(e) {
       let fields = this.state.fields;
       fields[e.target.name] = e.target.value;
@@ -27,7 +32,8 @@ class Register extends React.Component {
       });
 
     }
-
+    
+    // prevents submittion of form before validation
     submituserRegistrationForm(e) {
       e.preventDefault();
       if (this.validateForm()) {
@@ -40,16 +46,16 @@ class Register extends React.Component {
           alert("Welcome to Websell");
           this.props.history.push("/timeline");
       }
-        
-
     }
-
+    
+    // criteria for form validation
     validateForm() {
 
       let fields = this.state.fields;
       let errors = {};
       let formIsValid = true;
-
+      
+      // validation for username
       if (!fields["username"]) {
         formIsValid = false;
         errors["username"] = "*Please enter your username.";
@@ -61,7 +67,8 @@ class Register extends React.Component {
           errors["username"] = "*Please enter alphabet characters only.";
         }
       }
-
+     
+      // validation for email id
       if (!fields["emailid"]) {
         formIsValid = false;
         errors["emailid"] = "*Please enter your email-ID.";
@@ -76,6 +83,7 @@ class Register extends React.Component {
         }
       }
 
+      // validation for mobile no
       if (!fields["mobileno"]) {
         formIsValid = false;
         errors["mobileno"] = "*Please enter your mobile no.";
@@ -88,6 +96,7 @@ class Register extends React.Component {
         }
       }
 
+      // validation for password
       if (!fields["password"]) {
         formIsValid = false;
         errors["password"] = "*Please enter your password.";
@@ -104,39 +113,34 @@ class Register extends React.Component {
         errors: errors
       });
       return formIsValid;
-
-
     }
 
-
-
-  render() {
-    return (
-    <div className='login card'>
-     <div>
-        <form method="post"  name="userRegistrationForm"  onSubmit= {this.submituserRegistrationForm} >
-            <span className="label"> Enter your Username: </span>
-            <input type="text" name="username" value={this.state.fields.username} onChange={this.handleChange} />
-            <div className="errorMsg">{this.state.errors.username}</div>
-            <span className="label"> Enter your E-mail: </span>
-            <input type="text" name="emailid" value={this.state.fields.emailid} onChange={this.handleChange}  />
-            <div className="errorMsg">{this.state.errors.emailid}</div>
-            <span className="label"> Enter your Mobile No: </span>
-            <input type="text" name="mobileno" value={this.state.fields.mobileno} onChange={this.handleChange}   />
-            <div className="errorMsg">{this.state.errors.mobileno}</div>
-            <span className="label"> Set your Password: </span>
-            <input type="password" name="password" value={this.state.fields.password} onChange={this.handleChange} />
-            <div className="errorMsg">{this.state.errors.password}</div>
-            <button className="reg"> Register </button> <br /> <br />
-            <Link to='/Login'><span className="foot"> Already have an account? Login here </span></Link>
-        </form>
-    </div>
-</div>
-
-      );
-  }
-
-
+    // this is our UI
+    // you can understand them on the screen as it gets render
+    render() {
+        return (
+        <div className='login card'>
+             <div>
+                <form method="post"  name="userRegistrationForm"  onSubmit= {this.submituserRegistrationForm} >
+                    <span className="label"> Enter your Username: </span>
+                    <input type="text" name="username" value={this.state.fields.username} onChange={this.handleChange} />
+                    <div className="errorMsg">{this.state.errors.username}</div>
+                    <span className="label"> Enter your E-mail: </span>
+                    <input type="text" name="emailid" value={this.state.fields.emailid} onChange={this.handleChange}  />
+                    <div className="errorMsg">{this.state.errors.emailid}</div>
+                    <span className="label"> Enter your Mobile No: </span>
+                    <input type="text" name="mobileno" value={this.state.fields.mobileno} onChange={this.handleChange}   />
+                    <div className="errorMsg">{this.state.errors.mobileno}</div>
+                    <span className="label"> Set your Password: </span>
+                    <input type="password" name="password" value={this.state.fields.password} onChange={this.handleChange} />
+                    <div className="errorMsg">{this.state.errors.password}</div>
+                    <button className="reg"> Register </button> <br /> <br />
+                    <Link to='/Login'><span className="foot"> Already have an account? Login here </span></Link>
+                </form>
+            </div>
+        </div>
+        );
+    }
 }
 
 

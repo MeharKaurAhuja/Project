@@ -6,6 +6,8 @@ import Navbar2 from './Navbar2';
 import '../App.css';
 
 class Art extends React.Component {
+    
+    // initializing our state
     state = {
         img1: [1,219,'LIKE'],
         img2: [2,167,'LIKE'],
@@ -34,11 +36,16 @@ class Art extends React.Component {
         showComm5: [false,5],
         showComm6: [false,6],
     }
+    
+    // we have used it so that when we open our page it opens from the top
     componentDidMount() {
         window.scrollTo(0, 0)
     }
+
+    // function to display comments on clicking the button
     handleComm = (e,param) => {
         console.log(e);
+        // to show comments
         if(e[0]===true){
             if(e[1]===1){
                 this.setState({
@@ -71,6 +78,7 @@ class Art extends React.Component {
                 })
             }
         }
+        // to hide comments
         else{
             if(e[1]===1){
                 console.log("hello");
@@ -105,10 +113,12 @@ class Art extends React.Component {
             }
         }
     }
+    
+    // function to like or unlike on clicking the button
     handleClick = (e,param) => {
-       //console.log('Clicked', e[0]);
-       
         
+        //console.log('Clicked', e[0]);
+        //to increase likes
         if(e[2]==='LIKE'){
             const inc = e[1]+1;
             
@@ -143,7 +153,7 @@ class Art extends React.Component {
                 })
             }
         }
-        
+        // to unlike
         else{
             const dec = e[1]-1;
             if(e[0]===1){
@@ -178,7 +188,9 @@ class Art extends React.Component {
             }
         }
     
-        }
+      }
+    
+      // to add a comment with certain id
       addComment1 = (comment) => {
         comment.id = Math.floor(Math.random() * 10);
         let comments1 = [...this.state.comments1, comment];
@@ -221,165 +233,168 @@ class Art extends React.Component {
           comments6
         })
       }
+      
+    // this is our UI
+    // you can understand them on the screen as it gets render
     render() {
         return (
             <div>
-            <Navbar2 />
-            <div className="card4">
-            <h1 className='heading'>Art And Craft</h1>
-            <div className='row'>
-                <div className='col m6'>
-                    <div className="detail3">
-                        <img src="https://cdn.firstcrycdn.com/2018/07/514855921-H.jpg" alt="oops! not available" />
+                <Navbar2 />
+                <div className="card4">
+                    <h1 className='heading'>Art And Craft</h1>
+                    <div className='row'>
+                        <div className='col m6'>
+                            <div className="detail3">
+                                <img src="https://cdn.firstcrycdn.com/2018/07/514855921-H.jpg" alt="oops! not available" />
+                            </div>
+                        </div>
+                        <div className='col m6'>
+                            <p className="detail4">Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.<br/>
+                            Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.
+
+                            </p>
+                            <br />
+                        </div>
                     </div>
-                </div>
-                <div className='col m6'>
-                    <p className="detail4">Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.<br/>
-                    Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.
-                    
-                    </p>
                     <br />
-                </div>
-            </div>
-            <br />
-            <div className='row'>
-                    <div className='col s3'>
-                        <img className='image1 im2' src='https://www.addtoevent.co.uk/sites/default/files/styles/one_third/public/wooden%20spoons%20and%20puppet%20crafts.jpg' alt='pic1' />
-                        <input type="button" value={this.state.img1[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img1)} />
-                        <span className='like'> {this.state.img1[1]} </span>
+                    <div className='row'>
+                        <div className='col s3'>
+                            <img className='image1 im2' src='https://www.addtoevent.co.uk/sites/default/files/styles/one_third/public/wooden%20spoons%20and%20puppet%20crafts.jpg' alt='pic1' />
+                            <input type="button" value={this.state.img1[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img1)} />
+                            <span className='like'> {this.state.img1[1]} </span>
 
-                        <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm1)}/>
+                            <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm1)}/>
 
 
-                        <br /><br />
+                            <br /><br />
 
-                        <div className='comm1'>
-                            {this.state.showComm1[0] ? (
-                            <div>
-                                <Comment1 comments = {this.state.comments1}/>
+                            <div className='comm1'>
+                                {this.state.showComm1[0] ? (
+                                <div>
+                                    <Comment1 comments = {this.state.comments1}/>
 
-                            </div>) :
-                            (null)}
-                                <br />
-                            <AddComment1 addComment={this.addComment1} /><br />
-                            
+                                </div>) :
+                                (null)}
+                                    <br />
+                                <AddComment1 addComment={this.addComment1} /><br />
+
+                            </div>
+
                         </div>
-                    
-                    </div>
-                    <div className='col s3'>
-                        <img className='image1 im2' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pmGkiKhWnGg-2dy2GH1Xj8GdyHqwLgtcAmEfuPb0pj7slJRJsw' alt='pic1' />
-                        <input type="button" value={this.state.img2[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img2)} />
-                        <span className='like'> {this.state.img2[1]} </span>
+                        <div className='col s3'>
+                            <img className='image1 im2' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pmGkiKhWnGg-2dy2GH1Xj8GdyHqwLgtcAmEfuPb0pj7slJRJsw' alt='pic1' />
+                            <input type="button" value={this.state.img2[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img2)} />
+                            <span className='like'> {this.state.img2[1]} </span>
 
-                        <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm2)}/>
+                            <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm2)}/>
 
 
-                        <br /><br />
+                            <br /><br />
 
-                        <div className='comm1'>
-                            {this.state.showComm2[0] ? (
-                            <div>
-                                <Comment1 comments = {this.state.comments2}/>
+                            <div className='comm1'>
+                                {this.state.showComm2[0] ? (
+                                <div>
+                                    <Comment1 comments = {this.state.comments2}/>
 
-                            </div>) :
-                            (null)}
-                                <br />
-                            <AddComment1 addComment={this.addComment2} /><br />
-                            
+                                </div>) :
+                                (null)}
+                                    <br />
+                                <AddComment1 addComment={this.addComment2} /><br />
+
+                            </div>
                         </div>
-                   </div>
-                    <div className='col s3'>
-                        <img className='image1 im2' src='http://charitywings.org/wp-content/uploads/2018/03/star-string-art-400x250.jpg' alt='pic1' />
-                        <input type="button" value={this.state.img3[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img3)} />
-                        <span className='like'> {this.state.img3[1]} </span>
+                        <div className='col s3'>
+                            <img className='image1 im2' src='http://charitywings.org/wp-content/uploads/2018/03/star-string-art-400x250.jpg' alt='pic1' />
+                            <input type="button" value={this.state.img3[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img3)} />
+                            <span className='like'> {this.state.img3[1]} </span>
 
-                        <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm3)}/>
+                            <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm3)}/>
 
 
-                        <br /><br />
+                            <br /><br />
 
-                        <div className='comm1'>
-                            {this.state.showComm3[0] ? (
-                            <div>
-                                <Comment1 comments = {this.state.comments3}/>
+                            <div className='comm1'>
+                                {this.state.showComm3[0] ? (
+                                <div>
+                                    <Comment1 comments = {this.state.comments3}/>
 
-                            </div>) :
-                            (null)}
-                                <br />
-                            <AddComment1 addComment={this.addComment3} /><br />
-                            
+                                </div>) :
+                                (null)}
+                                    <br />
+                                <AddComment1 addComment={this.addComment3} /><br />
+
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='row'>
-                    <div className='col s3'>
-                        <img className='image1 im2' src='https://colourfulminds.co.uk/wp-content/uploads/2017/12/img_4334-400x250.jpg' alt='pic1' />
-                        <input type="button" value={this.state.img4[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img4)} />
-                        <span className='like'> {this.state.img4[1]} </span>
+                    <div className='row'>
+                        <div className='col s3'>
+                            <img className='image1 im2' src='https://colourfulminds.co.uk/wp-content/uploads/2017/12/img_4334-400x250.jpg' alt='pic1' />
+                            <input type="button" value={this.state.img4[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img4)} />
+                            <span className='like'> {this.state.img4[1]} </span>
 
-                        <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm4)}/>
+                            <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm4)}/>
 
 
-                        <br /><br />
+                            <br /><br />
 
-                        <div className='comm1'>
-                            {this.state.showComm4[0] ? (
-                            <div>
-                                <Comment1 comments = {this.state.comments4}/>
+                            <div className='comm1'>
+                                {this.state.showComm4[0] ? (
+                                <div>
+                                    <Comment1 comments = {this.state.comments4}/>
 
-                            </div>) :
-                            (null)}
-                                <br />
-                            <AddComment1 addComment={this.addComment4} /><br />
-                            
+                                </div>) :
+                                (null)}
+                                    <br />
+                                <AddComment1 addComment={this.addComment4} /><br />
+
+                            </div>
                         </div>
-                    </div>
-                    <div className='col s3'>
-                        <img className='image1 im2' src='https://i.pinimg.com/originals/b5/0e/d5/b50ed5983f792a86ebca6614a5dcbcd3.jpg' alt='pic1' />
-                        <input type="button" value={this.state.img5[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img5)} />
-                        <span className='like'> {this.state.img5[1]} </span>
+                        <div className='col s3'>
+                            <img className='image1 im2' src='https://i.pinimg.com/originals/b5/0e/d5/b50ed5983f792a86ebca6614a5dcbcd3.jpg' alt='pic1' />
+                            <input type="button" value={this.state.img5[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img5)} />
+                            <span className='like'> {this.state.img5[1]} </span>
 
-                        <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm5)}/>
+                            <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm5)}/>
 
 
-                        <br /><br />
+                            <br /><br />
 
-                        <div className='comm1'>
-                            {this.state.showComm5[0] ? (
-                            <div>
-                                <Comment1 comments = {this.state.comments5}/>
+                            <div className='comm1'>
+                                {this.state.showComm5[0] ? (
+                                <div>
+                                    <Comment1 comments = {this.state.comments5}/>
 
-                            </div>) :
-                            (null)}
-                                <br />
-                            <AddComment1 addComment={this.addComment5} /><br />
-                            
+                                </div>) :
+                                (null)}
+                                    <br />
+                                <AddComment1 addComment={this.addComment5} /><br />
+
+                            </div>
                         </div>
-                   </div>
-                    <div className='col s3'>
-                        <img className='image1 im2' src='http://www.cartoondistrict.com/wp-content/uploads/2017/09/fun-art-and-craft-ideas-for-kids-400x250.jpg' alt='pic1' />
-                        <input type="button" value={this.state.img6[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img6)} />
-                        <span className='like'> {this.state.img6[1]} </span>
+                        <div className='col s3'>
+                            <img className='image1 im2' src='http://www.cartoondistrict.com/wp-content/uploads/2017/09/fun-art-and-craft-ideas-for-kids-400x250.jpg' alt='pic1' />
+                            <input type="button" value={this.state.img6[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img6)} />
+                            <span className='like'> {this.state.img6[1]} </span>
 
-                        <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm6)}/>
+                            <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm6)}/>
 
 
-                        <br /><br />
+                            <br /><br />
 
-                        <div className='comm1'>
-                            {this.state.showComm6[0] ? (
-                            <div>
-                                <Comment1 comments = {this.state.comments6}/>
+                            <div className='comm1'>
+                                {this.state.showComm6[0] ? (
+                                <div>
+                                    <Comment1 comments = {this.state.comments6}/>
 
-                            </div>) :
-                            (null)}
-                                <br />
-                            <AddComment1 addComment={this.addComment6} /><br />
-                            
+                                </div>) :
+                                (null)}
+                                    <br />
+                                <AddComment1 addComment={this.addComment6} /><br />
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         )
     }

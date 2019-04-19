@@ -6,6 +6,8 @@ import '../App.css';
 import Navbar2 from './Navbar2';
 
 class Poems extends React.Component {
+    
+    // initializing our state
     state = {
         img1: [1,219,'LIKE'],
         img2: [2,167,'LIKE'],
@@ -34,11 +36,16 @@ class Poems extends React.Component {
         showComm5: [false,5],
         showComm6: [false,6],
     }
+    
+    // we have used it so that when we open our page it opens from the top
     componentDidMount() {
         window.scrollTo(0, 0)
     }
+
+   // function to display comments on clicking the button
    handleComm = (e,param) => {
         console.log(e);
+        // to show comments
         if(e[0]===true){
             if(e[1]===1){
                 this.setState({
@@ -71,6 +78,7 @@ class Poems extends React.Component {
                 })
             }
         }
+        // to hide comments
         else{
             if(e[1]===1){
                 console.log("hello");
@@ -105,10 +113,11 @@ class Poems extends React.Component {
             }
         }
     }
+    // function to like or unlike on clicking the button
     handleClick = (e,param) => {
-       //console.log('Clicked', e[0]);
-       
         
+        //console.log('Clicked', e[0]);
+        //to increase likes
         if(e[2]==='LIKE'){
             const inc = e[1]+1;
             
@@ -143,7 +152,7 @@ class Poems extends React.Component {
                 })
             }
         }
-        
+        // to unlike
         else{
             const dec = e[1]-1;
             if(e[0]===1){
@@ -178,7 +187,9 @@ class Poems extends React.Component {
             }
         }
     
-        }
+     }
+     
+     // to add a comment with certain id
      addComment1 = (comment) => {
         comment.id = Math.floor(Math.random() * 10);
         let comments1 = [...this.state.comments1, comment];
@@ -221,6 +232,9 @@ class Poems extends React.Component {
           comments6
         })
       }
+    
+    // this is our UI
+    // you can understand them on the screen as it gets render
     render() {
         return (
             <div>

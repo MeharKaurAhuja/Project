@@ -2,7 +2,10 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import '../App.css';
 
+// using props sent from another component in this function
 const Navbar2 = (props) => {
+    
+    // it returns navbar in all the categories 
     return(
         <nav className='nav-wrapper blue lighten-3 st'>
             <ul className='list st2'>
