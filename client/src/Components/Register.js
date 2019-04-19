@@ -15,6 +15,9 @@ class Register extends React.Component {
       this.submituserRegistrationForm = this.submituserRegistrationForm.bind(this);
 
     };
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
 
     handleChange(e) {
       let fields = this.state.fields;

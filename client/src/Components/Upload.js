@@ -107,7 +107,7 @@ class Upload extends React.Component {
           
         </form>
         <div className="imgPreview">
-            <h1>Hey there!</h1> 
+             
           {$imagePreview}
         </div>
       </div>

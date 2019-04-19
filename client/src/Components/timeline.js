@@ -17,6 +17,9 @@ class Timeline extends Component {
         ],
         showComm: false
     }
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     handleComm = () => {
         if(this.state.showComm===true){
             this.setState({
@@ -88,8 +91,10 @@ class Timeline extends Component {
        
     render() {
         return (
-        <div className="row">
-            <div className='col s7 offset-s1 card card2'>
+        <div className="backImage">
+            <br/>
+            <h2 className="heythere">Hey there!</h2>
+            <div className='card card2'>
                 <div className="timeline-page">
                      <Upload />
                     <br />
@@ -152,13 +157,14 @@ class Timeline extends Component {
                     <div className='AddComment1'>
                     <AddComment addComment={this.addComment} /><br /><br />
                     </div>
-                
                     <br />
                     <br />
                 
                 </div>
             </div>
-            
+            <Link to='/'><input type="button" className="logout" value="Logout"/></Link>
+                    
+            <br/><br/><br/>
             
         </div>
         )

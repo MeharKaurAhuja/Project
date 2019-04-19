@@ -7,8 +7,8 @@ const Navbar = (props) => {
         <nav className='nav-wrapper grey darken-4 st'>
             <Link to='/' className='left logo'> WebSell </Link>
             <ul className='right list'>
-                <li><Link to='/'>Home</Link></li>
-                <li><Link to='/Login'>Login</Link></li>
+                <li><Link to='/'><h5>Home</h5></Link></li>
+                <li><Link to='/Login'><h5>Login</h5></Link></li>
             </ul>
         </nav>
     )

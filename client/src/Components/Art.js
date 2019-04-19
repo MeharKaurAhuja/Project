@@ -2,10 +2,10 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import Comment1 from './Comment1';
 import AddComment1 from './AddComment1';
-import '../App.css';
 import Navbar2 from './Navbar2';
+import '../App.css';
 
-class Painting extends React.Component {
+class Art extends React.Component {
     state = {
         img1: [1,219,'LIKE'],
         img2: [2,167,'LIKE'],
@@ -17,6 +17,9 @@ class Painting extends React.Component {
           { text:'I love this place', id: 1 }
         ],
         showComm: false
+    }
+    componentDidMount() {
+        window.scrollTo(0, 0)
     }
     handleComm = () => {
         if(this.state.showComm===true){
@@ -118,17 +121,17 @@ class Painting extends React.Component {
             <div>
             <Navbar2 />
             <div className="card4">
-            <h1 className='heading'>Paintings</h1>
+            <h1 className='heading'>Art And Craft</h1>
             <div className='row'>
                 <div className='col m6'>
                     <div className="detail3">
-                        <img src="https://afremov.com/images/product/image_2347.jpeg" />
+                        <img src="https://cdn.firstcrycdn.com/2018/07/514855921-H.jpg" alt="oops! not available" />
                     </div>
                 </div>
                 <div className='col m6'>
                     <p className="detail4">Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.<br/>
-                    Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.<br/>
-                    Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.
+                    Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.
+                    
                     </p>
                     <br />
                 </div>
@@ -136,7 +139,7 @@ class Painting extends React.Component {
             <br />
             <div className='row'>
                     <div className='col s3'>
-                        <img className='image1 im2' src='http://www.billlongartist.com/wp-content/uploads/et_temp/Mt.-Cammerer-Mist-663x650-94478_400x250.jpg' alt='pic1' />
+                        <img className='image1 im2' src='https://www.addtoevent.co.uk/sites/default/files/styles/one_third/public/wooden%20spoons%20and%20puppet%20crafts.jpg' alt='pic1' />
                         <input type="button" value={this.state.img1[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img1)} />
                         <span className='like'> {this.state.img1[1]} </span>
 
@@ -159,7 +162,7 @@ class Painting extends React.Component {
                     
                     </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://www.boredart.com/wp-content/uploads/2017/10/striking-horse-paintings-like-never-seen-400x250.jpg' alt='pic1' />
+                        <img className='image1 im2' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0pmGkiKhWnGg-2dy2GH1Xj8GdyHqwLgtcAmEfuPb0pj7slJRJsw' alt='pic1' />
                         <input type="button" value={this.state.img2[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img2)} />
                         <span className='like'> {this.state.img2[1]} </span>
 
@@ -181,7 +184,7 @@ class Painting extends React.Component {
                         </div>
                    </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='http://fmcostantino.com/wp-content/uploads/2018/02/Pre-Caffeinated-400x250.jpg' alt='pic1' />
+                        <img className='image1 im2' src='http://charitywings.org/wp-content/uploads/2018/03/star-string-art-400x250.jpg' alt='pic1' />
                         <input type="button" value={this.state.img3[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img3)} />
                         <span className='like'> {this.state.img3[1]} </span>
 
@@ -205,7 +208,7 @@ class Painting extends React.Component {
                 </div>
                 <div className='row'>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/5367d41d-e197-4934-beac-7a452bcb7857/dbx5dgp-39fb8735-74b8-4613-8fd7-bafd76dd571c.jpg/v1/fill/w_400,h_250,q_70,strp/women_paintings_artwork_colors_by_ir0ne_dbx5dgp-250t.jpg' alt='pic1' />
+                        <img className='image1 im2' src='https://colourfulminds.co.uk/wp-content/uploads/2017/12/img_4334-400x250.jpg' alt='pic1' />
                         <input type="button" value={this.state.img4[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img4)} />
                         <span className='like'> {this.state.img4[1]} </span>
 
@@ -227,14 +230,14 @@ class Painting extends React.Component {
                         </div>
                     </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://www.christies.com/img/SaleImages/NYR-15887-09112018-1.jpg?width=400&quality=70?width=300' alt='pic1' />
+                        <img className='image1 im2' src='https://i.pinimg.com/originals/b5/0e/d5/b50ed5983f792a86ebca6614a5dcbcd3.jpg' alt='pic1' />
                         <input type="button" value={this.state.img5[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img5)} />
                         <span className='like'> {this.state.img5[1]} </span>
 
                         <input type="button" value="Show Comments" className='like1' onClick={this.handleComm}/>
 
 
-                       <br /><br />
+                        <br /><br />
 
                         <div className='comm1'>
                             {this.state.showComm ? (
@@ -249,7 +252,7 @@ class Painting extends React.Component {
                         </div>
                    </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://www.morpethgallery.com/wp-content/uploads/2019/01/MORNING-REFLECTIONS-web-72dpi-400x250.jpg' alt='pic1' />
+                        <img className='image1 im2' src='http://www.cartoondistrict.com/wp-content/uploads/2017/09/fun-art-and-craft-ideas-for-kids-400x250.jpg' alt='pic1' />
                         <input type="button" value={this.state.img6[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img6)} />
                         <span className='like'> {this.state.img6[1]} </span>
 
@@ -271,10 +274,10 @@ class Painting extends React.Component {
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
             </div>
         )
     }
 }
 
-export default Painting;
+export default Art;

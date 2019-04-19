@@ -2,10 +2,10 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import Comment1 from './Comment1';
 import AddComment1 from './AddComment1';
-import '../App.css';
 import Navbar2 from './Navbar2';
+import '../App.css';
 
-class Dance extends React.Component {
+class Singing extends React.Component {
     state = {
         img1: [1,219,'LIKE'],
         img2: [2,167,'LIKE'],
@@ -17,6 +17,9 @@ class Dance extends React.Component {
           { text:'I love this place', id: 1 }
         ],
         showComm: false
+    }
+    componentDidMount() {
+        window.scrollTo(0, 0)
     }
     handleComm = () => {
         if(this.state.showComm===true){
@@ -118,17 +121,16 @@ class Dance extends React.Component {
             <div>
             <Navbar2 />
             <div className="card4">
-            <h1 className='heading'>Dance</h1>
+            <h1 className='heading'>Singing</h1>
             <div className='row'>
                 <div className='col m6'>
                     <div className="detail3">
-                        <img src="https://media.giphy.com/media/Gt1IikDkRnLe8/giphy.gif" />
+                        <img src="https://media2.giphy.com/media/jlgJjFADP3LmU/giphy.gif" />
                     </div>
                 </div>
                 <div className='col m6'>
                     <p className="detail4">Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.<br/>
-                    Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.<br/>
-                    Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.
+                    Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.Lorem ipsum dolor sit amet, vix nostro docendi ad. Facilis suscipit abhorreant mel eu, idque maluisset corrumpit cu mel. Nostrud fuisset democritum no mel, pri ornatus ullamcorper eu. Has vocibus luptatum inciderint id, vel ut dolore quodsi pertinax.
                     </p>
                     <br />
                 </div>
@@ -136,7 +138,7 @@ class Dance extends React.Component {
             <br />
             <div className='row'>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://media.giphy.com/media/KHMMyhiKTf92E/giphy.gif' alt='pic1' />
+                        <img className='image1 im2' src='https://i.gifer.com/Dk4t.gif' alt='pic1' />
                         <input type="button" value={this.state.img1[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img1)} />
                         <span className='like'> {this.state.img1[1]} </span>
 
@@ -159,7 +161,7 @@ class Dance extends React.Component {
                     
                     </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://media1.tenor.com/images/258c33570e1e4ba2dbdb9e8dd435701d/tenor.gif?itemid=4059586' alt='pic1' />
+                        <img className='image1 im2' src='https://thumbs.gfycat.com/EqualMiserableAtlasmoth-small.gif' alt='pic1' />
                         <input type="button" value={this.state.img2[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img2)} />
                         <span className='like'> {this.state.img2[1]} </span>
 
@@ -181,7 +183,7 @@ class Dance extends React.Component {
                         </div>
                    </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://i.imgur.com/1zibF2J.gif' alt='pic1' />
+                        <img className='image1 im2' src='https://i.imgur.com/Tdtz3VK.gif' alt='pic1' />
                         <input type="button" value={this.state.img3[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img3)} />
                         <span className='like'> {this.state.img3[1]} </span>
 
@@ -205,7 +207,7 @@ class Dance extends React.Component {
                 </div>
                 <div className='row'>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://media1.tenor.com/images/e0e86e41a53e4dd5c034164e7f0c3004/tenor.gif?itemid=5894447' alt='pic1' />
+                        <img className='image1 im2' src='https://media1.tenor.com/images/920d52cd808c0c1120e4405503565979/tenor.gif?itemid=9763263' alt='pic1' />
                         <input type="button" value={this.state.img4[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img4)} />
                         <span className='like'> {this.state.img4[1]} </span>
 
@@ -227,14 +229,14 @@ class Dance extends React.Component {
                         </div>
                     </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://i.gifer.com/MNAg.gif' alt='pic1' />
+                        <img className='image1 im2' src='https://i.imgur.com/aWHkwRh.gif' alt='pic1' />
                         <input type="button" value={this.state.img5[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img5)} />
                         <span className='like'> {this.state.img5[1]} </span>
 
                         <input type="button" value="Show Comments" className='like1' onClick={this.handleComm}/>
 
 
-                        <br /><br />
+                       <br /><br />
 
                         <div className='comm1'>
                             {this.state.showComm ? (
@@ -249,7 +251,7 @@ class Dance extends React.Component {
                         </div>
                    </div>
                     <div className='col s3'>
-                        <img className='image1 im2' src='https://data.whicdn.com/images/272973421/original.gif' alt='pic1' />
+                        <img className='image1 im2' src='https://i.makeagif.com/media/3-24-2017/WXnA5S.gif' alt='pic1' />
                         <input type="button" value={this.state.img6[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img6)} />
                         <span className='like'> {this.state.img6[1]} </span>
 
@@ -271,10 +273,10 @@ class Dance extends React.Component {
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
             </div>
         )
     }
 }
 
-export default Dance;
+export default Singing;

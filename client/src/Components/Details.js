@@ -12,6 +12,9 @@ class Details extends React.Component {
         ],
         showComm: false
     }
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     handleComm = () => {
         if(this.state.showComm===true){
             this.setState({

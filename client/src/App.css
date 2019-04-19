@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-    font-family: 'Merienda', cursive;
+  font-family: 'Crimson Text', serif;
 }
 
 .logo{
@@ -9,7 +9,8 @@
     font-weight: bold;
 }
 .list{
-    padding-right: 30px;
+    padding-right: 10px;
+    font-size: 16px;
 }
 .home{
     background-image: url("https://i.imgur.com/fuQPtmK.jpg");
@@ -66,7 +67,8 @@
 .sub1{
     font-family: 'Merienda', cursive;
     margin-top: 50px;
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: bold;
     padding-top: 50px;
     margin-left: 40px;
 }
@@ -93,7 +95,7 @@
 }
 .text{
     margin: 50px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 #register, #login {
@@ -139,13 +141,16 @@ form input {
   margin-bottom: 10px;
 }
 .card2{
-    margin-top: 30px;
+    margin: 0 15%;
     overflow: hidden; 
+    border-radius: 55px;
+    background: url('https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Simple-Background-Images-2.png');
+    background-size: cover;
 }
 .timeline-page{
     margin: 50px;
-    margin-left: 100px;
     text-align: left;
+    margin-left: 300px;
 }
 .like{
     font-family: 'Merienda', cursive;
@@ -157,7 +162,7 @@ form input {
 .image{
     width: 350px;
     height: 250px;
-    margin: 35px 0 0 0;
+    margin: 30px 0 0 0;
 }
 .card3{
     margin: 100px;
@@ -165,21 +170,25 @@ form input {
     overflow: hidden;
     background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/21/71/295830892804e4c.jpg');
     background-size: cover;
+    font-family: Poppins, sans-serif;
+    border: 1px solid skyblue;
+    border-radius: 15px;
+    box-shadow: 2px 4px 4px 2px skyblue;
 }
 .im{
-    margin-left: 180px;
+    margin-left: 140px;
     padding: 0 35px 15px;
 }
 .im1{
     padding-top: 15px;
-    margin-left: 180px;
+    margin-left: 170px;
     font-size: 25px;
     font-weight: bold;
     color: crimson;
 }
 
 .AddComment1{
-    width: 50%;
+    width: 50%; 
 }
 .btn{
     width: 20%;
@@ -238,6 +247,7 @@ form input {
     text-align: justify;
     color: indianred;
     font-weight: bold;
+    font-size: 18px;
 }
 .image1{
     width: 400px;
@@ -270,15 +280,49 @@ form input {
     background-size: cover;
 }
 .sub2{
-    font-family: 'Merienda', cursive;
+    font-family: "Vidaloka", serif;
     margin-top: 50px;
-    font-size: 40px;
+    font-size: 50px;
     color: crimson;
-    font-weight: bold;
     padding-top: 50px;
+    font-weight: 600;
 }
 .st2{
     margin-left: 440px;
     font-weight: bold;
     
+}
+.backImage{
+    background-image: url('https://www.dhresource.com/0x0s/f2-albu-g5-M01-43-94-rBVaJFlIdyOAPVvpAANnAP2QAFA196.jpg/beach-themed-photo-studio-backgrounds-beautiful.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.heythere{
+    margin: 0;
+    color: white;
+    margin-bottom: 15px;
+    font-size: 75px;
+    font-family: 'Merienda', cursive;
+}
+.logout{
+    float: right;
+    margin-right: 4%;
+    width: 150px;
+    height: 45px;
+    border-radius: 15%;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+.lastImage{
+    background: url('https://i.imgur.com/l33NVuL.png');
+    background-size: cover;
+    height: 500px;
+    font-family: "Vidaloka", serif;
+}
+.lastImage h2{
+    padding: 170px;
+    font-size: 80px;
+    font-weight: 500;
 }

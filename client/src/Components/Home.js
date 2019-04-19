@@ -5,6 +5,9 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 
 class Home extends Component {
+    componentDidMount() {
+        window.scrollTo(0, 0)
+    }
     render(){
         return(
             <div className="main">
@@ -41,19 +44,19 @@ class Home extends Component {
                     
                     </div>
                     <div className='col s3'>
-                        <h4 className='im1'>Painting</h4>
+                        <h4 className='im1'>Painting</h4><br/>
                         <Link to='/Painting'><img className='image im' src='http://www.indialine.com/travel/images/madhubani-painting.jpg'
                         onMouseOver={e => (e.currentTarget.src = "https://315gqf1cb88e2qagu3f9xz91-wpengine.netdna-ssl.com/wp-content/uploads/2016/06/Harriet-Faith-FTR-Buck-350x250.jpg")} onMouseOut={e => (e.currentTarget.src = "http://www.indialine.com/travel/images/madhubani-painting.jpg")} alt='painting' /></Link>
                    
                    </div>
                     <div className='col s3'>
-                        <h4 className='im1'>Photography</h4>
+                        <h4 className='im1'>Photography</h4><br/>
                         <Link to='/Photography'><img className='image im' src='https://cdn.firespring.com/images/781e971c-5e98-4f55-ae79-5f9a06176ac5.jpg' onMouseOver={e => (e.currentTarget.src = 'https://i.pinimg.com/originals/7f/33/eb/7f33ebf08f27713b51c51659a79da2dc.jpg')} onMouseOut={e => (e.currentTarget.src = "https://cdn.firespring.com/images/781e971c-5e98-4f55-ae79-5f9a06176ac5.jpg")} alt='photography' /></Link>
                     </div>
                 </div>
                 <div className='row'>
                     <div className='col s3'>
-                        <h4 className='im1'>Poems</h4>
+                        <h4 className='im1'>Poems</h4><br/>
                         <Link to='/Poems'><img className='image im' src='https://i2.wp.com/www.multiculturallywed.com/wp-content/uploads/2015/08/Rumi-2667-Wedding-Vows-Persian-Wedding-Reading.jpg?fit=350%2C250' onMouseOver={e => (e.currentTarget.src = "https://bdayhindi.com/wp-content/uploads/Best-Happy-Birthday-Wishes-for-Lover-350x250.jpg")} onMouseOut={e => (e.currentTarget.src = "https://i2.wp.com/www.multiculturallywed.com/wp-content/uploads/2015/08/Rumi-2667-Wedding-Vows-Persian-Wedding-Reading.jpg?fit=350%2C250")} alt='poems' /></Link>
                     
                     </div>
@@ -63,12 +66,15 @@ class Home extends Component {
                    
                    </div>
                     <div className='col s3'>
-                        <h4 className='im1'>Singing</h4>
-                        <Link to='/Singing'><img className='image im' src='https://i.makeagif.com/media/3-24-2017/WXnA5S.gif' onMouseOver={e => (e.currentTarget.src = "https://i.imgur.com/Tdtz3VK.gif")} onMouseOut={e => (e.currentTarget.src = "https://i.makeagif.com/media/3-24-2017/WXnA5S.gif")} alt='singing' /></Link>
+                            <h4 className='im1'>Singing</h4><br/>
+                            <Link to='/Singing'><img className='image im' src='https://i.makeagif.com/media/3-24-2017/WXnA5S.gif' onMouseOver={e => (e.currentTarget.src = "https://i.imgur.com/Tdtz3VK.gif")} onMouseOut={e => (e.currentTarget.src = "https://i.makeagif.com/media/3-24-2017/WXnA5S.gif")} alt='singing' /></Link>
+                    </div>
+                    </div>
                     </div>
                 </div>
-                </div>
-                </div>
+                <div className='lastImage'>
+                    <h2>Let's begin building our talents together...</h2>
+                </div>   
             </div>
         );
     }
