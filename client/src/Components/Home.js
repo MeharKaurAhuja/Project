@@ -38,7 +38,7 @@ class Home extends Component {
                     <p className='text'> Lorem ipsum dolor sit amet, ad his alii mandamus, at qui amet suscipit dissentiet. Errem ceteros luptatum at vim, aeque perfecto pro an. Pro eu veniam iriure, ea iriure adipiscing efficiantur duo. Putant sadipscing eum ei, noster tamquam mnesarchum ut duo. Fugit graece laoreet nam ne, causae consectetuer in eos. Vix brute veniam equidem an, et vis velit quaeque, postulant adolescens et has.
                     </p>
                 </div>
-                <div className='s'>
+                <div className='categ'>
                     <div className='sub2'> Categories </div>
                     <div className='card card3'>
                         <div className='row'>

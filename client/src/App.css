@@ -36,7 +36,7 @@
     padding: 40px;
 }
 .log{
-     margin: auto;
+    margin: auto;
     width: 80px;
     height: 40px;
     border-radius: 10%;
@@ -276,8 +276,7 @@ form input {
     margin-top: 85px;
     margin-left: 150px;
 }
-.s{
-    
+.categ{  
     background: url('https://png.pngtree.com/thumb_back/fw800/back_pic/04/21/71/295830892804e4c.jpg');
     background-size: cover;
 }
@@ -331,4 +330,12 @@ form input {
 .previewComponent h4{
     color: darkred;
     margin-left: 25px;
+}
+.icons{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+.category{
+    font-size: 17px;
 }

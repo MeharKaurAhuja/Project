@@ -8,6 +8,6 @@ var nameSchema = new mongoose.Schema({
 });
 
 // export the new Schema so we could modify it using Node.js
-module.exports = mongoose.model("User", nameSchema);
+module.exports = mongoose.model("User", nameSchema)
 
 

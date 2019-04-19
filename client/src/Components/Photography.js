@@ -305,7 +305,7 @@ class Photography extends React.Component {
                         <input type="button" value={this.state.img3[2]} className="like1" onClick={this.handleClick.bind(this,this.state.img3)} />
                         <span className='like'> {this.state.img3[1]} </span>
 
-                        <input type="button" value="Show Comments" className='like1' onClick={this.handleComm3}/>
+                        <input type="button" value="Show Comments" className='like1' onClick={this.handleComm.bind(this,this.state.showComm3)}/>
 
 
                         <br /><br />
