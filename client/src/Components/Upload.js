@@ -100,6 +100,7 @@ class Upload extends React.Component {
 
     return (
       <div className="previewComponent">
+        <h4>You can Upload your file here!!</h4>
         <form onSubmit={(e)=>this._handleSubmit(e)}>
           <input className="fileInput" 
             type="file" 

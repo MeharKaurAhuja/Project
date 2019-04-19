@@ -194,8 +194,8 @@ form input {
     width: 20%;
 }
 .time{
-    width:60%;
-    height:60%;
+    width:480px;
+    height:325px;
 }
 
 .st{
@@ -213,6 +213,7 @@ form input {
 }
 .detail2{
    margin-top: 5%;
+    font-size: 18px;
 }
 .card4{
     
@@ -230,6 +231,7 @@ form input {
     width: 80%;
     text-align: left;
     margin-left: 50px;
+    font-size: 18px;
 }
 .comm1{
     width: 80%;
@@ -325,4 +327,8 @@ form input {
     padding: 170px;
     font-size: 80px;
     font-weight: 500;
+}
+.previewComponent h4{
+    color: darkred;
+    margin-left: 25px;
 }

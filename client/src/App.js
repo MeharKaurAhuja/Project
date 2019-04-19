@@ -7,7 +7,9 @@ import Home from './Components/Home';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Timeline from './Components/timeline';
-import Details from './Components/Details';
+import Details1 from './Components/Details1';
+import Details2 from './Components/Details2';
+import Details3 from './Components/Details3';
 import Art from './Components/Art';
 import Painting from './Components/Painting';
 import Photography from './Components/Photography';
@@ -28,7 +30,9 @@ class App extends Component {
                     <Route path='/Navbar2' component={Navbar2} />
                     <Route path='/Register' component={Register} />
                     <Route path='/timeline' component={Timeline} />
-                    <Route path='/Details' component={Details} />
+                    <Route path='/Details1' component={Details1} />
+                    <Route path='/Details2' component={Details2} />
+                    <Route path='/Details3' component={Details3} />
                     <Route path='/Art' component={Art} />
                     <Route path='/Painting' component={Painting} />
                     <Route path='/Photography' component={Photography} />

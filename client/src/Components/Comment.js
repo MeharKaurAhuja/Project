@@ -3,10 +3,9 @@ import '../App.css';
 
 const Comment = (props) => {
     const { comments } = props; 
-
     const commentList = comments.map( comment => {
       
-      return (
+    return (
         <div>
             <div className='a1' key={comment.id}>
               <div> <b>Name:</b> { comment.name } </div>
