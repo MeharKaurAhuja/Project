@@ -1,8 +1,3 @@
-
-mehak puri
-11:50 PM (8 minutes ago)
-to me
-
 const express = require("express");
 const router = express.Router();
 const User = require("../models/data");
